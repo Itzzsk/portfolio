@@ -1,0 +1,132 @@
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    background-color: white;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    text-align: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+nav ul {
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration:none;
+    color: black;
+    font-weight: bold;
+
+}
+
+.profile {
+    text-align: center;
+    color: #000000;
+    margin-top: 80px; /* Adjust based on header height */
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid #f0f0f0; /* Border around the profile picture */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+/* Add padding to avoid overlap with fixed header */
+.description {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.em;
+}
+
+section {
+    margin: 20px 0;
+}
+
+.project {
+    text-align: center;
+}
+
+.project-image {
+    width: 500px;
+    height: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    
+}
+.project-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-logo-container{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+
+}
+
+.social-logo-container:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+}
+
+
+footer {
+    text-align: center;
+    padding: 5px 0;
+    background-color: white;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 768px) {
+    nav ul li {
+        margin: 0 6px; /* Further reduce margin for mobile */
+    }
+
+    .description {
+        font-size: 0.9em; /* Smaller font size for mobile */
+    }
+
+    .project-image {
+        width: 80%; /* Full width for mobile */
+
+    }
+}
