@@ -1,85 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="pro2.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skanda | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <!-- AOS CSS -->
+  <link href="pro2.css" rel="stylesheet">
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#connect">Connect</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="home">
-    <div class="profile">
-        <img src="profile1.jpg" alt="Profile Picture" class="profile-pic">
-        <h1 class = "firsttwo">
-            I'm
-        <span class="highlight">Skanda</span></h1>
-            <h2>Welcome to My Portfolio</h2>
-            <p class="description"> I'm Computer Science student skilled in designing and problem-solving.
-              I enjoy creating innovative solutions and combining functionality with creativity to build impactful projects.
-            </p>
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">Skanda.</div>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-            </section>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" data-aos="fade-down">Home</a></li>
+          <li><a href="#work" data-aos="fade-up">Work</a></li>
+          <li><a href="#skills" data-aos="fade-left">Skills</a></li>
+          <li><a href="about.html" data-aos="fade-right">About</a></li>
+          <li><a href="#connect" data-aos="fade-left">Connect</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
 
-        <section id="work">
-            <h2>My Projects</h2>
-                <p>Click on the images below to explore my projects!</p>
-            
-            <div class="project">
-                <a href="http://budgetcalcibysk.netlify.app" target="_blank">
-                    <img src="btt.jpg" alt="Project Image" class="project-image">
-                </a>
-                <p>A simple Budget tracker site.</p>
-            </div>
-            <div class="project">
-                <a href="https://tictactoebyskanda.netlify.app" target="_blank">
-                    <img src="js.jpg" alt="Project Image" class="project-image">
-                </a>
-                <p>A simple multiplayer game using HTML,CSS,JavaScript.</p>
-            </div>
-            <div class="project">
-                <a href="https://moviemantrabysk.netlify.app" target="_blank">
-                    <img src="dw.jpg" alt="Project Image" class="project-image">
-                </a>
-                <p>A simple movie app using HTML,CSS,JavaScript.</p>
-            </div>
-        </section>
- 
-        
-        <section id="connect">
-            <h2>Connect with Me</h2>
-            <div class="social-links">
-                <a href="https://www.instagram.com/ittzsk?igsh=MmxqanQyaHRrN2I1" target="_blank">
-                 <img src="favicon.ico" alt="Instagram Logo" class="social-logo-container"> 
-                    
-                </a>
-                <a href="https://www.linkedin.com/in/skanda-umesh-88b16432b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
-                    <img src="linkedin.jpg" alt="LinkedIn Logo" class="social-logo-container">
-                </a>
-                <a href="https://github.com/Itzzsk" target="_blank">
-                    <img src="github.jpg" alt="Github Logo" class="social-logo-container">
-                </a>
-                <a href="mailto:skandaumesh82@gmail.com" target="_blank">
-                    <img src="email.jpg" alt="Email Logo" class="social-logo-container">
-                </a>
-            </div>
-        </section>
+  <section id="home" data-aos="fade-up">
+    <div class="container">
+      <div class="hero">
+        <div class="hero-content">
+          <h1>I'm <span class="highlight">Skanda</span></h1>
+          <h2>Computer Science Student & Developer</h2>
+          <p>I'm passionate about designing innovative solutions and combining functionality with creativity to build impactful projects.</p>
+        </div>
+        <div class="hero-image">
+          <img src="profile1.jpg" alt="Profile Picture" class="profile-pic"/>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Skanda . All rights reserved.</p>
-    </footer>
-   
+  <section id="work">
+    <div class="container">
+      <h2 class="section-title">My Projects</h2>
+      <p>Click on the projects below to explore my work</p>
+      <div class="projects-grid">
+        <div class="project-card">
+          <a href="https://unisphere.onrender.com" target="_blank">
+            <img src="forp.jpg" alt="Unisphere" class="project-image"/>
+            <div class="project-info">
+              <h3>Unisphere</h3>
+              <p>A college web app for notes, posts, and announcements.</p>
+            </div>
+          </a>
+        </div>
+        <div class="project-card">
+          <a href="http://budgetcalcibyskanda.com" target="_blank">
+            <img src="btt.jpg" alt="Budget Tracker" class="project-image"/>
+            <div class="project-info">
+              <h3>Budget Tracker</h3>
+              <p>A simple budgeting app for personal finance tracking.</p>
+            </div>
+          </a>
+        </div>
+        <div class="project-card">
+          <a href="https://moviemantrabysk.netlify.app" target="_blank">
+            <img src="dw.jpg" alt="Unisphere" class="project-image"/>
+            <div class="project-info">
+              <h3>Movie Mantra</h3>
+              <p>Movie Mantra is netflix clone app</p>
+            </div>
+          </a>
+        </div>
+        <div class="project-card">
+          <a href="https://tictactoe.skanda.com" target="_blank">
+            <img src="js.jpg" alt="Tic Tac Toe" class="project-image"/>
+            <div class="project-info">
+              <h3>Tic Tac Toe</h3>
+              <p>A fun, classic Tic Tac Toe game in a modern UI.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="py-12">
+    <div class="container mx-auto px-4">
+      <h2 class="section-title text-3xl font-Space Grotesk text-center mb-8">My Skills</h2>
+  
+      <!-- Underlined Tab Buttons -->
+      <div class="tabs flex justify-center flex-wrap gap-4 text-lg font-Space Grotesk border-b border-gray-300 mb-6">
+        <button class="tab active text-blue-600 relative pb-2" data-skill="programming">Programming</button>
+        <button class="tab text-gray-700 relative pb-2" data-skill="web">Web Dev</button>
+        <button class="tab text-gray-700 relative pb-2" data-skill="problem">Problem Solving</button>
+        <button class="tab text-gray-700 relative pb-2" data-skill="tools">Tools</button>
+        <button class="tab text-gray-700 relative pb-2" data-skill="soft">Soft Skills</button>
+      </div>
+  
+      <!-- Radar Chart -->
+      <div class="flex justify-center items-center w-full">
+        <div class="skills-chart w-full max-w-md bg-white p-6 rounded-xl shadow-lg">
+          <div class="relative" style="height: 300px; width: 100%;">
+            <div class="chart-wrapper">
+              <canvas id="skillsChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="connect">
+    <div class="container">
+      <h2 class="section-title">Connect with Me</h2>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/skanda-umesh-88b16432b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/Itzzsk" class="social-link" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:skandaumesh82@gmail.com" class="social-link" target="_blank">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://www.instagram.com/ittzsk?igsh=MmxqanQyaHRrN2I1" class="social-link" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://x.com/ittzzsk?t=mvCD93DBC9XYref9KQvP0g&s=08" class="social-link" target="_blank">
+          </i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1227" width="24" height="24">
+            <path fill="currentColor" d="M807.5 0h358.2L732.5 507.1l442.7 719.9H829.7L540.8 751.9 204.9 1227H0l453.1-553L21.5 0h353.2l242.7 376.8zM755.1 1102.1h99.2L358.3 128H249z"/>
+          </svg>
+          
+        </a>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer>
+    <p>&copy; 2025 Skanda. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <script>
+    const ctx = document.getElementById("skillsChart").getContext("2d");
+  
+    const skillSets = {
+      programming: {
+        labels: ["Python", "C", "Java"],
+        data: [80, 70, 65],
+        color: "rgba(37, 99, 235, 1)"
+      },
+      web: {
+        labels: ["HTML", "CSS", "JavaScript", "Node.js"],
+        data: [90, 85, 88, 50],
+        color: "rgba(16, 185, 129, 1)"
+      },
+      problem: {
+        labels: ["Algorithm Design", "Competitive Coding"],
+        data: [80, 85],
+        color: "rgba(234, 179, 8, 1)"
+      },
+      tools: {
+        labels: ["Git", "VS Code", "Netlify", "GitHub Pages"],
+        data: [85, 90, 75, 80],
+        color: "rgba(168, 85, 247, 1)"
+      },
+      soft: {
+        labels: ["Communication", "Teamwork", "Project Management"],
+        data: [85, 88, 82],
+        color: "rgba(239, 68, 68, 1)"
+      }
+    };
+  
+    let radarChart = new Chart(ctx, {
+      type: "radar",
+      data: {
+        labels: skillSets.programming.labels,
+        datasets: [{
+          label: "Skill Level",
+          data: skillSets.programming.data,
+          backgroundColor: "rgba(37, 99, 235, 0.2)",
+          borderColor: skillSets.programming.color,
+          pointBackgroundColor: skillSets.programming.color,
+          borderWidth: 2
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+          r: {
+            suggestedMin: 0,
+            suggestedMax: 100,
+            angleLines: { color: "#ccc" },
+            grid: { color: "#eee" },
+            pointLabels: {
+              font: { size: 14 },
+              color: '#ffffff'
+            },
+            ticks: {
+              backdropColor: "transparent",
+              color: "#666"
+            }
+          }
+        },
+        plugins: {
+          tooltip: { enabled: true },
+          legend: { display: false }
+        }
+      }
+    });
+  
+    // Tab switching logic for underline-style tabs
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', function () {
+        document.querySelectorAll('.tab').forEach(btn => {
+          btn.classList.remove('active', 'text-blue-600');
+          btn.classList.add('text-gray-700');
+        });
+    
+        this.classList.add('active', 'text-blue-600');
+        this.classList.remove('text-gray-700');
+    
+        const selected = this.dataset.skill;
+        const skill = skillSets[selected];
+    
+        radarChart.data.labels = skill.labels;
+        radarChart.data.datasets[0].data = skill.data;
+        radarChart.data.datasets[0].borderColor = skill.color;
+        radarChart.data.datasets[0].pointBackgroundColor = skill.color;
+        radarChart.data.datasets[0].backgroundColor = skill.color.replace("1)", "0.2)");
+        radarChart.update();
+      });
+    })
+    
+  </script>
+
+  <script>
+    // Get elements
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+
+    // Toggle menu visibility
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
 </body>
 </html>
